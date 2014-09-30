@@ -1,0 +1,14 @@
+// See http://www.jshint.com/options/
+{
+  "regexp": true,
+  "undef": true,
+  "trailing": true,
+
+  "asi": true,
+  "boss": true,
+  "expr": true,
+  "laxbreak": true,
+  "laxcomma": true,
+  "loopfunc": true,
+  "node": true
+}

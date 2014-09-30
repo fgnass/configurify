@@ -1,0 +1,22 @@
+{
+  "name": "configurify",
+  "version": "1.0.0",
+  "description": "Browserify transform to expose configuration to the browser",
+  "author": "Felix Gnass <fgnass@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "browserify", "browserify-transform", "configuration"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "dependencies": {
+    "minimatch": "^1.0.0",
+    "through2": "^0.6.2"
+  },
+  "devDependencies": {
+    "browserify": "^5.12.1",
+    "tap": "^0.4.12"
+  }
+}
