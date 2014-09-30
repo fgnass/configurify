@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/fgnass/configurify.svg)](https://travis-ci.org/fgnass/configurify)
+
 # configurify
 
 A browserify transform to expose server-side configuration options to the
