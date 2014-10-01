@@ -2,17 +2,17 @@
 
 # configurify
 
-A browserify transform to expose server-side configuration options to the
-browser.
+A browserify transform to evaluate dynamic expressions on the server and expose
+them as static snapshot.
 
 ### When to use
 
 Consider using configurify when you would otherwise use
-[envify](https://www.npmjs.org/package/envify) but don't want to define individual environment variables for every
-single config option.
+[envify](https://www.npmjs.org/package/envify) but don't want to define
+individual environment variables for every single config option.
 
 With configurify you can instead use one single var to decide which set of
-config options to load. Where excatly the actual data comes from (a file,
+config options to load. Where exactly the actual data comes from (a file,
 a database, remote service) doesn't matter.
 
 ### How it works
