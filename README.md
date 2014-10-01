@@ -5,7 +5,17 @@
 A browserify transform to expose server-side configuration options to the
 browser.
 
-### The Idea
+### When to use
+
+Consider using configurify when you would otherwise use
+[envify](https://www.npmjs.org/package/envify) but don't want to define individual environment variables for every
+single config option.
+
+With configurify you can instead use one single var to decide which set of
+config options to load. Where excatly the actual data comes from (a file,
+a database, remote service) doesn't matter.
+
+### How it works
 
 Lets say you have a `conf` module that exposes a different set of config
 options depending on its environement:
@@ -17,12 +27,15 @@ var profile = process.env.NODE_CONF || 'default';
 module.exports = require('./' + profile);
 ```
 
-The __configurify__ transform will require the module on the server and pass
-the exported object to `JSON.stringify()`. The serialized configuration will
-then be bundled by browserify and exposed to the client.
+The configurify transform will require (and therefore execute) the module on the
+server and serialize the exported object using `JSON.stringify()`.
 
-Whether the transform is applied or not depends on the modules file name. By
-default all files that match the `**/conf/*` glob pattern will be transformed.
+The browserify bundle will then contain that serialized object rather than your
+original code.
+
+Whether the transform is applied to a certain module depends on the module's
+file name. By default all files that match the `**/conf/*` glob pattern will be
+transformed.
 
 ### Usage
 
