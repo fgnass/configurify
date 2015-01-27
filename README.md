@@ -46,7 +46,7 @@ your project's package.json:
 {
   "browserify": {
     "transform": [
-      ["configurify", { "pattern": "**/conf/*" } ]
+      [["configurify", { "pattern": "**/conf/*" }]]
     ]
   }
 }
