@@ -5,18 +5,20 @@
   "author": "Felix Gnass <fgnass@gmail.com>",
   "license": "MIT",
   "keywords": [
-    "browserify", "browserify-transform", "configuration"
+    "browserify",
+    "browserify-transform",
+    "configuration"
   ],
-  "repository" : {
-    "type" : "git",
-    "url" : "http://github.com/fgnass/configurify.git"
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/fgnass/configurify.git"
   },
   "main": "index.js",
   "scripts": {
     "test": "node test"
   },
   "dependencies": {
-    "minimatch": "^1.0.0",
+    "minimatch": "^3.0.3",
     "through2": "^0.6.2"
   },
   "devDependencies": {
