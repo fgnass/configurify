@@ -1,6 +1,6 @@
 {
   "name": "configurify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Browserify transform to expose configuration to the browser",
   "author": "Felix Gnass <fgnass@gmail.com>",
   "license": "MIT",
